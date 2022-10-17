@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: 34</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+    <script>
+      let favPizzas = ["Tikka Cheese", "Afghani", "pepperoni"];
+      for (i = 0; i < favPizzas.length; i++) {
+        a1 = `I like ${favPizzas[0]} pizza`;
+        b1 = `I like ${favPizzas[1]} pizza`;
+        c1 = `I like ${favPizzas[2]} pizza`;
+      }
+      d1 = `I like ${favPizzas.length} kind of pizzas`;
+      document.getElementById("p1").innerHTML = a1;
+      document.getElementById("p2").innerHTML = b1;
+      document.getElementById("p3").innerHTML = c1;
+      document.getElementById("p4").innerHTML = d1;
+    </script>
+  </body>
+</html>

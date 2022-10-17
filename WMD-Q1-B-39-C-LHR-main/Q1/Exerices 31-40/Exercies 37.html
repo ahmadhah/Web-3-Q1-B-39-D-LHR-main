@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 37</title>
+</head>
+
+<body>
+
+  <p id="b1"></p>
+
+  <input type="text" id="size" name="size" />
+  <input type="text" id="message" name="message" />
+
+  <button onclick="make_shirt()">Submit</button>
+
+  <p id="a1"></p>
+  <p id="c1"></p>
+
+  <script>
+
+    size_array = ["small", " medium", "large"];
+
+    let b = `Available sizes are: ${size_array}.`;
+    document.getElementById("b1").innerText = b;
+
+    function make_shirt() {
+
+      s = document.getElementById("size").value;
+      m = document.getElementById("message").value;
+
+      let a;
+
+      if (s === size_array[1] || s === size_array[2]) {
+        m = "I love JavaScript";
+        a = `shirt size is ${s}, ${m}`;
+      } else {
+        a = `shirt size is ${s}, ${m}`;
+      }
+
+      document.getElementById("a1").innerText = a;
+    }
+
+
+  </script>
+</body>
+
+</html>

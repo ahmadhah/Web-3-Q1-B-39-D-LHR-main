@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: 33</title>
+  </head>
+  <body>
+    <p id="1"></p>
+    <p><span id="span2"></span></p>
+    <script>
+      let numbers = new Array();
+      let printNumbers = new Array();
+
+      let count = 1;
+      for (i = 0; i < 9; i++) {
+        numbers[i] = count;
+        count++;
+        if (numbers[i] === 1) {
+          c = `${numbers[i]}st`;
+        } else if (numbers[i] === 2) {
+          c = `${numbers[i]}nd`;
+        } else if (numbers[i] === 3) {
+          c = `${numbers[i]}rd`;
+        } else {
+          c = `${numbers[i]}th`;
+        }
+        printNumbers.push(c);
+      }
+
+      document.getElementById("1").innerHTML = numbers;
+      document.getElementById("span2").innerHTML = printNumbers;
+    </script>
+  </body>
+</html>

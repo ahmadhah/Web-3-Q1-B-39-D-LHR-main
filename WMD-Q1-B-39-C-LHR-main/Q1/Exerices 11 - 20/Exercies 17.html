@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 17</title>
+</head>
+
+<body>
+  <p id="a1"></p>
+  <p id="b1"></p>
+  <p id="c1"></p>
+  <p>==============================================================</p>
+  <p id="guestList">
+    Anti, can’t make it with us. So, i need to invite "Mansoor".
+  </p>
+  <p>==============================================================</p>
+  <p id="a2"></p>
+  <p id="b2"></p>
+  <p id="c2"></p>
+  <p>==============================================================</p>
+
+  <p>
+    AoA. Guests, I found a bigger table, and inviting some more guests at
+    Dinner.
+  </p>
+  <p id="a3"></p>
+  <p id="b3"></p>
+  <p id="f3"></p>
+  <p id="c3"></p>
+  <p id="e3"></p>
+  <p id="g3"></p>
+  <p>==============================================================</p>
+
+  <p>Sorry, I can invite only two guests at dinner.</p>
+  <p id="h4"></p>
+  <p id="i4"></p>
+  <p id="j4"></p>
+  <p id="k4"></p>
+  <p>==============================================================</p>
+
+  <p>Final list of guests for Dinner.</p>
+  <p id="a5"></p>
+  <p id="b5"></p>
+  <p>==============================================================</p>
+
+  <script>
+
+
+    var guestList = ["Uncle", "aunt", "Mamo"];
+
+    let a = `<b>${guestList[0]}</b>, I would like to invite you on a Dinner.`;
+    let b = `<b>${guestList[1]}</b>, I would like to invite you on a Dinner.`;
+    let c = `<b>${guestList[2]}</b>, I would like to invite you on a Dinner.`;
+
+    document.getElementById("a1").innerHTML = a;
+    document.getElementById("b1").innerHTML = b;
+    document.getElementById("c1").innerHTML = c;
+
+    document.getElementById(guestList);
+
+    guestList[2] = "Mansoor";
+    let d = `<b>${guestList[2]}</b>, I would like to invite you on a Dinner.`;
+
+    document.getElementById("a2").innerHTML = a;
+    document.getElementById("b2").innerHTML = b;
+    document.getElementById("c2").innerHTML = d;
+
+    guestList.unshift("Ans");
+    guestList[4] = "Mansoor";
+    guestList[2] = "Saleem";
+    guestList[3] = "Naani Ami";
+    guestList.push("Arham");
+
+    let e = `<b>${guestList[0]}</b>, I would like to invite you on a Dinner.`;
+    let f = `<b>${guestList[2]}</b>, I would like to invite you on a Dinner.`;
+    let g = `<b>${guestList[5]}</b>, I would like to invite you on a Dinner.`;
+
+    document.getElementById("a3").innerHTML = e;
+    document.getElementById("b3").innerHTML = a;
+    document.getElementById("c3").innerHTML = b;
+    document.getElementById("e3").innerHTML = d;
+    document.getElementById("f3").innerHTML = f;
+    document.getElementById("g3").innerHTML = g;
+
+    let h = `<b>${guestList[5]}</b>, I can't invite you at dinner.`;
+    guestList.pop();
+    document.getElementById("h4").innerHTML = h;
+
+    let i = `<b>${guestList[4]}</b>, I can't invite you at dinner.`;
+    guestList.pop();
+    document.getElementById("i4").innerHTML = i;
+
+    guestList[4] = guestList[0];
+    guestList[0] = guestList[3];
+    let j = `<b>${guestList[4]}</b>, I can't invite you at dinner.`;
+    document.getElementById("j4").innerHTML = j;
+    guestList.pop();
+    guestList.pop();
+
+    let k = `<b>${guestList[2]}</b>, I can't invite you at dinner.`;
+    document.getElementById("k4").innerHTML = k;
+    guestList.pop();
+
+    document.getElementById("a5").innerHTML = a;
+    document.getElementById("b5").innerHTML = b;
+
+    guestList.pop();
+    guestList.pop();
+    if (guestList.length == 0) {
+      document.write("Array is empty now");
+    } else {
+      document.write("Array is not empty");
+    }
+    console.log(guestList);
+  </script>
+</body>
+
+</html>

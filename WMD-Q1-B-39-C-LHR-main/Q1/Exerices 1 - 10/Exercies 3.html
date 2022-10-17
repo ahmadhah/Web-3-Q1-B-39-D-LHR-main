@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 3</title>
+</head>
+
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+
+  <script>
+    let Name = "Ahmad Hannan";
+
+    //  exercise 1-3
+
+    let text = `Hi, I'm ${Name.toUpperCase()}, I'm here to learn "blockchain". Uper Case`;
+    let text1 = `Hi, I'm ${Name.toLowerCase()}, I'm here to learn "blockchain". Lower Case`;
+    let text2 = `Hi, I'm ${titleCase(
+      Name
+    )}, I'm here to learn "blockchain". Title Case`;
+
+    function titleCase(Name) {
+      return Name.toLowerCase().replace(/\b\w/g, (s) => s.toUpperCase());
+    }
+
+    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo1").innerHTML = text1;
+    document.getElementById("demo2").innerHTML = text2;
+  </script>
+</body>
+
+</html>

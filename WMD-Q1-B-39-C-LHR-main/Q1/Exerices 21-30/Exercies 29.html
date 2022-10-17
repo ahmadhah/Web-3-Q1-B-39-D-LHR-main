@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: 29</title>
+  </head>
+  <body>
+    <p id="aa1"></p>
+    <p id="a1"></p>
+    <p id="b1"></p>
+    <p id="c1"></p>
+    <p id="d1"></p>
+    <p id="e1"></p>
+    <p id="f1"></p>
+
+    <script>
+      favorite_fruits = ["Mango", "Peach", "Water Melon"];
+
+      if (favorite_fruits[0] == "Mango") {
+        a = `You really like Mango`;
+      } else {
+        a = "Mango not in list";
+      }
+
+      if (favorite_fruits[1] == "Peach") {
+        b = `You really like Peach`;
+      } else {
+        b = "Peach not in list";
+      }
+
+      if (favorite_fruits[2] == "Water Melon") {
+        c = `You really like Water Melon`;
+      } else {
+        c = "Water Melon not in list";
+      }
+
+      if (favorite_fruits[2] == "orange") {
+        d = `You really like orange`;
+      } else {
+        d = "orange not in list";
+      }
+
+      if (favorite_fruits[2] == "Strawberry") {
+        e = `You really like Strawberry`;
+      } else {
+        e = "Strawberry not in list";
+      }
+
+      document.getElementById("aa1").innerHTML = favorite_fruits;
+      document.getElementById("a1").innerHTML = b;
+      document.getElementById("b1").innerHTML = b;
+      document.getElementById("c1").innerHTML = c;
+      document.getElementById("d1").innerHTML = d;
+      document.getElementById("e1").innerHTML = e;
+    </script>
+  </body>
+</html>

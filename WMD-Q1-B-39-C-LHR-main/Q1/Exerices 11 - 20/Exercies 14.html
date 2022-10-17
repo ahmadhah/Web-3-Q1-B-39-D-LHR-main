@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 14</title>
+</head>
+
+<body>
+  <p id="a1"></p>
+  <p id="b1"></p>
+  <p id="c1"></p>
+
+  <script>
+    var guestList = ["Uncle", "aunt", "Mamo"];
+
+    let a = `<b>${guestList[0]}</b>, I would like to invite you on a Dinner.`;
+    let b = `<b>${guestList[1]}</b>, I would like to invite you on a Dinner.`;
+    let c = `<b>${guestList[2]}</b>, I would like to invite you on a Dinner.`;
+
+    document.getElementById("a1").innerHTML = a;
+    document.getElementById("b1").innerHTML = b;
+    document.getElementById("c1").innerHTML = c;
+  </script>
+</body>
+
+</html>

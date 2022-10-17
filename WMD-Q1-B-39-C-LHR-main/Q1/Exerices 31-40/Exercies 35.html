@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 35</title>
+</head>
+
+<body>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+
+  <script>
+    let animals = ["Tiger", "Leopard", "Lion",];
+    for (i = 0; i < animals.length; i++) {
+      c1 = `${animals[2]} have same kind of characteristics ${animals[1]}, ${animals[0]}`;
+      b1 = `${animals[1]} have same kind of characteristics ${animals[2]}, ${animals[0]}`;
+      a1 = `${animals[0]} have same kind of characteristics ${animals[1]}, ${animals[2]}`;
+    }
+    document.getElementById("p1").innerHTML = a1;
+    document.getElementById("p2").innerHTML = b1;
+    document.getElementById("p3").innerHTML = c1;
+  </script>
+</body>
+
+</html>

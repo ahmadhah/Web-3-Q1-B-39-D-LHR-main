@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 38</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    //country parameter is by default default
+
+    function describe_city(city, country = "Pakistan") {
+        return `${city} is in ${country}`;
+    }
+
+
+    document.write(describe_city("Lahore", "Pakistan") + "<br><br>");
+
+    document.write(describe_city("Islamabad", "Pakistan") + "<br><br>");
+
+    //without Country Parameter
+    document.write(describe_city("Karachi") + "<br>");
+
+</script>

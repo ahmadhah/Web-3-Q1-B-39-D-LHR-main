@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 36</title>
+</head>
+
+<body>
+  <input type="text" id="size" name="size" />
+  <input type="text" id="message" name="message" />
+  <button onclick="make_shirt()">Submit</button>
+  <p id="a1"></p>
+  <p id="b1"></p>
+  <p id="c1"></p>
+
+  <script>
+
+    function make_shirt() {
+
+      m = document.getElementById("message").value;
+      s = document.getElementById("size").value;
+
+      let a = `shirt size is ${s}, ${m}`;
+
+      document.getElementById("a1").innerText = a;
+
+    }
+  </script>
+</body>
+
+</html>

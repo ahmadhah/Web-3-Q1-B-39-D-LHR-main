@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 24</title>
+</head>
+
+<body>
+  <p id="1"></p>
+  <p id="2"></p>
+  <p id="3"></p>
+  <p id="4"></p>
+  <p id="5"></p>
+  <p id="6"></p>
+  <p id="7"></p>
+  <p id="8"></p>
+  <p id="9"></p>
+  <p id="10"></p>
+
+
+
+  <script>
+
+
+
+    let a = "1";
+    let b = "2";
+    let c = 3;
+    let d = 4;
+    let e = 5;
+    let f = 6;
+    let g = 7;
+    let h = 8;
+    let i = 9;
+    let j = 10;
+
+    let a1 =
+      a < b
+        ? "I predict it to 'true' 'string' test"
+        : "I predict it to 'false' 'string' test";
+    let d1 =
+      b < d || a > c
+        ? "I predict it to 'true' 'or' test"
+        : "I predict it to 'false' 'or' test";
+    let b1 =
+      a < c
+        ? "I predict it to 'true' 'Numerical' test"
+        : "I predict it to 'false' 'Numerical' test";
+    let c1 =
+      b < d && a < c
+        ? "I predict it to 'true' 'And' test"
+        : "I predict it to 'false' 'And' test";
+
+    //Printing
+    document.getElementById("1").innerHTML = a1;
+    document.getElementById("2").innerHTML = b1;
+    document.getElementById("3").innerHTML = c1;
+    document.getElementById("4").innerHTML = d1;
+
+  </script>
+</body>
+
+</html>

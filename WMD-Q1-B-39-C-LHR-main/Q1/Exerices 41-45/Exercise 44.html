@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 44</title>
+  </head>
+
+  <body></body>
+</html>
+
+<script>
+  function addItemsInSandwich() {
+    let userConfirm;
+    let itemList = [];
+    while (!userConfirm) {
+      let userAdd = prompt("which item which you want to add ? ");
+      itemList.push(userAdd);
+
+      let userConfirm = confirm("Do you want to add more items ? ");
+      if (userConfirm == false) {
+        break;
+      }
+    }
+    return itemList;
+  }
+
+  function showWhatUserWant(userWant) {
+    console.log("User Requirements = " + userWant);
+  }
+  let userWant = addItemsInSandwich();
+
+  showWhatUserWant(userWant);
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 18</title>
+</head>
+
+<body>
+
+  <p>==========Original============</p>
+  <p id="array"></p>
+  <p>==========Alphabeticaly============</p>
+  <p id="arr1"></p>
+  <p>==========Non-Alphabeticaly============</p>
+  <p id="arr2"></p>
+
+</body>
+<script>
+  const places = new Array(5);
+  places[0] = "\nIstanbul";
+  places[1] = "\nBalochistan";
+  places[2] = "\nTibet";
+  places[3] = "\nKailash";
+  places[4] = "\nMabali";
+  document.getElementById("array").innerHTML = places;
+  let a = new Array(places);
+  a.sort();
+  document.getElementById("arr1").innerHTML = a;
+  // places.reverse();
+  document.getElementById("arr2").innerHTML = places;
+
+  console.log(places);
+</script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 16</title>
+</head>
+
+<body>
+  <p id="a1"></p>
+  <p id="b1"></p>
+  <p id="c1"></p>
+  <p>==============================================================</p>
+  <p id="guestList">
+    Anti, can’t make it with us. So, i need to invite "Ali".
+  </p>
+  <p>==============================================================</p>
+  <p id="a2"></p>
+  <p id="b2"></p>
+  <p id="c2"></p>
+  <p>==============================================================</p>
+
+  <p>
+    AoA. Guests, I found a bigger table, and inviting some more guests at
+    Dinner.
+  </p>
+  <p id="a3"></p>
+  <p id="b3"></p>
+  <p id="f3"></p>
+  <p id="c3"></p>
+  <p id="e3"></p>
+  <p id="g3"></p>
+  <script>
+    var guestList = ["Uncle", "aunt", "Mamo"];
+
+    let a = `<b>${guestList[0]}</b>, I would like to invite you on a Dinner.`;
+    let b = `<b>${guestList[1]}</b>, I would like to invite you on a Dinner.`;
+    let c = `<b>${guestList[2]}</b>, I would like to invite you on a Dinner.`;
+
+    document.getElementById("a1").innerHTML = a;
+    document.getElementById("b1").innerHTML = b;
+    document.getElementById("c1").innerHTML = c;
+
+    document.getElementById(guestList);
+
+    guestList[2] = "Mamo";
+    let d = `<b>${guestList[2]}</b>, I would like to invite you on a Dinner.`;
+
+    document.getElementById("a2").innerHTML = a;
+    document.getElementById("b2").innerHTML = b;
+    document.getElementById("c2").innerHTML = d;
+
+    guestList.unshift("Ans");
+    guestList[2] = "Saleem";
+    guestList[3] = "Naani Ami";
+    guestList[4] = "Mansoor";
+    guestList.push("Arham");
+
+    let e = `<b>${guestList[0]}</b>, I would like to invite you on a Dinner.`;
+    let f = `<b>${guestList[2]}</b>, I would like to invite you on a Dinner.`;
+    let g = `<b>${guestList[5]}</b>, I would like to invite you on a Dinner.`;
+
+    document.getElementById("a3").innerHTML = e;
+    document.getElementById("b3").innerHTML = a;
+    document.getElementById("c3").innerHTML = b;
+    document.getElementById("e3").innerHTML = d;
+    document.getElementById("f3").innerHTML = f;
+    document.getElementById("g3").innerHTML = g;
+
+    guestList.appendChild();
+  </script>
+</body>
+
+</html>

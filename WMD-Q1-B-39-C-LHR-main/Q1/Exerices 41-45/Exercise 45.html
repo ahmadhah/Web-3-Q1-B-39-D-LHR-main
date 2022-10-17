@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 45</title>
+</head>
+
+<body></body>
+
+</html>
+
+<script>
+  class Car {
+    constructor(
+      manufacturer,
+      modalName,
+      color = "No Color Found",
+      optionalFeature = "No Optional Feature Found"
+    ) {
+      this.manufacturer = manufacturer;
+      this.modalName = modalName;
+      this.color = color;
+      this.optionalFeature = optionalFeature;
+
+      this.show = () => {
+        return `Manufacturer : ${this.manufacturer} , Model Name : ${this.modalName} , Color : ${this.color} , Optional Feature : ${this.optionalFeature} ,`;
+      };
+    }
+  }
+
+  const car = new Car("John Wick", "Corolla", "Black");
+  console.log(car.show());
+</script>

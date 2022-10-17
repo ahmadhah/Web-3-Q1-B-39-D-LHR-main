@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise: 27</title>
+</head>
+
+<body>
+  <p id="a1"></p>
+  <p id="b1"></p>
+  <p id="c1"></p>
+
+  <script>
+    var alien_color = "green";
+    let a;
+    if (alien_color == "green") {
+      a = `the player just earned 5 points.`;
+    } else if (alien_color !== "green") {
+      a = "the player just earned 10 points.";
+    }
+    var alien_colors = "yellow";
+    if (alien_colors == "green") {
+      b = `the player just earned 5 points.`;
+    } else if (alien_colors !== "green") {
+      b = "the player just earned 10 points.";
+    }
+
+    // let a = `<b>${guestList[0]}</b>, I would like to invite you on a Dinner.`;
+    // let b = `<b>${guestList[1]}</b>, I would like to invite you on a Dinner.`;
+    // let c = `<b>${guestList[2]}</b>, I would like to invite you on a Dinner.`;
+
+    document.getElementById("a1").innerHTML = a;
+    document.getElementById("b1").innerHTML = b;
+      // document.getElementById("c1").innerHTML = c;
+
+      // document.getElementById("a2").innerHTML = a;
+      // document.getElementById("b2").innerHTML = b;
+      // document.getElementById("c2").innerHTML = d;
+  </script>
+</body>
+
+</html>
